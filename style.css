@@ -1,0 +1,95 @@
+body {
+    font-family: 'Balgin', sans-serif;
+    background-color: #afa0f8;
+    color: #e8f59d;
+    margin: 20px;
+}
+
+.header {
+    text-align: center; /* Zentriere den Text */
+}
+
+.header h1 {
+    margin-bottom: 20px; /* Füge einen Abstand unter der Überschrift hinzu */
+}
+
+.header img {
+    max-width: 60%; /* Setze die maximale Breite des Bildes auf 100% */
+    height: auto; /* Behalte das Seitenverhältnis des Bildes bei */
+    margin-top: 10px; /* Füge einen Abstand über dem Bild hinzu */
+}
+main {
+    max-width: 3000px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between; /* Buttons links und rechts im Padding */
+    align-items: center; /* Zentriere die Elemente vertikal */
+}
+
+
+.table th, .table td {
+    border: 1.5px solid #140701;
+    padding: 0.2px;
+    text-align: center;
+}
+
+.btn {
+    text-decoration: none;
+    color: #f8f8f4;
+}
+
+.btn:hover {
+    
+    cursor: pointer;
+}
+
+.fixed-buttons {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    right: 10px; /* Buttons rechts im Padding */
+}
+
+.image-links {
+    position: fixed;
+    top: 50%;
+    left: 10px; /* Adjust the left position as needed */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust the gap between images as needed */
+    max-height: 600px; /* Beispiel für maximale Höhe mit Scrollbar */
+    overflow-y: auto;
+}
+
+.image-links a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+.image-links img {
+    width: 200px; /* Adjust the width of the images as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-links img:hover {
+    transform: scale(1.1);
+}
+
+.image-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
